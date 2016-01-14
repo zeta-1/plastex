@@ -9,7 +9,8 @@ from plasTeX.Logging import getLogger
 
 log = getLogger()
 
-__version__ = '1.0'
+# changeg version from 1.0 to 1.0.1
+__version__ = '1.0.1'
 
 def main(argv):
     """ Main program routine """
@@ -18,7 +19,7 @@ def main(argv):
     # Parse the command line options
     try:
         opts, args = config.getopt(argv[1:])
-    except Exception, msg:
+    except Exception as msg:
         log.error(msg)
         print >>sys.stderr, config.usage()
         sys.exit(1)
@@ -73,7 +74,7 @@ def main(argv):
     # Load renderer
     try:
         exec('from plasTeX.Renderers.%s import Renderer' % rname)
-    except ImportError, msg:
+    except ImportError as msg:
         log.error('Could not import renderer "%s".  Make sure that it is installed correctly, and can be imported by Python.' % rname)
         sys.exit(1)
 
