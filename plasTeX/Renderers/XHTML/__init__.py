@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import sys, os, re, codecs, plasTeX
 from plasTeX.Renderers.PageTemplate import Renderer as _Renderer

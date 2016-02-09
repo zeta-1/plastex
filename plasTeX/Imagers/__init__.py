@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import os, time, tempfile, shutil, re, string, pickle, codecs
 try: from hashlib import md5

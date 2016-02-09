@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 from .Generic import GenericOption, GenericParser, GenericArgument
 from plasTeX.ConfigManager import InvalidOptionError

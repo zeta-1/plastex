@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 from .Generic import GenericArgument
 from .Boolean import BooleanOption
